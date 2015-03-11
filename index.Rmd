@@ -34,7 +34,7 @@ Data <- read.csv(file="website.csv")
 ** Worldwide distribution of out-of-pocket payments **
 
 ```{r, results='asis', echo=FALSE, error=FALSE}
-OOPMap <- gvisGeoChart(Data, locationvar = 'Country',
+OOPMap <- gvisGeoChart(Data, locationvar = 'iso2c',
                         colorvar = 'OOP',
                         options = list(
                           colors = "['#fff7bc', '#d95f0e']"
@@ -46,7 +46,7 @@ Source: World Development Indicators
  
 ** Share of rural population **
 ```{r, results='asis', echo=FALSE, error=FALSE}
-RuralMap <- gvisGeoChart(Data, locationvar = 'Country',
+RuralMap <- gvisGeoChart(Data, locationvar = 'iso2c',
                         colorvar = 'Rural',
                         options = list(
                           colors = "['#fff7bc', '#d95f0e']"
@@ -58,7 +58,7 @@ Source: World Development Indicators
 
 ** Voice and Accountability **
 ```{r, results='asis', echo=FALSE, error=FALSE}
-VAMap <- gvisGeoChart(Data, locationvar = 'Country',
+VAMap <- gvisGeoChart(Data, locationvar = 'iso2c',
                         colorvar = 'VoiceandAccountability',
                         options = list(
                           colors = "['#fff7bc', '#d95f0e']"
@@ -70,7 +70,7 @@ Source: Worldwide Governance Indicators
 
 ** Government Effectiveness **
 ```{r, results='asis', echo=FALSE, error=FALSE}
-GEMap <- gvisGeoChart(Data, locationvar = 'Country',
+GEMap <- gvisGeoChart(Data, locationvar = 'iso2c',
                         colorvar = 'GovernmentEffectiveness',
                         options = list(
                           colors = "['#fff7bc', '#d95f0e']"
@@ -82,7 +82,7 @@ Source: Worldwide Governance Indicators
 
 ** Political Stability and No Violence **
 ```{r, results='asis', echo=FALSE, error=FALSE}
-PSMap <- gvisGeoChart(Data, locationvar = 'Country',
+PSMap <- gvisGeoChart(Data, locationvar = 'iso2c',
                         colorvar = 'PoliticalStabilityNoViolence',
                         options = list(
                           colors = "['#fff7bc', '#d95f0e']"
@@ -94,7 +94,7 @@ Source: Worldwide Governance Indicators
 
 ** Freedom **
 ```{r, results='asis', echo=FALSE, error=FALSE}
-FreeMap <- gvisGeoChart(Data, locationvar = 'Country',
+FreeMap <- gvisGeoChart(Data, locationvar = 'iso2c',
                         colorvar = 'Free',
                         options = list(
                           colors = "['#fff7bc', '#d95f0e']"
@@ -106,7 +106,7 @@ Source: Freedom House
 
 ** Gender Equality **
 ```{r, results='asis', echo=FALSE, error=FALSE}
-GQMap <- gvisGeoChart(Data, locationvar = 'Country',
+GQMap <- gvisGeoChart(Data, locationvar = 'iso2c',
                         colorvar = 'GenderEquality',
                         options = list(
                           colors = "['#fff7bc', '#d95f0e']"
