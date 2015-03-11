@@ -44,6 +44,73 @@ print(OOPMap, tag = 'chart')
 ```
 Source: World Development Indicators
  
+```{r, results='asis', echo=FALSE, error=FALSE}
+RuralMap <- gvisGeoChart(Data, locationvar = 'Country',
+                        colorvar = 'Rural',
+                        options = list(
+                          colors = "['#fff7bc', '#d95f0e']"
+                        ))
+
+print(RuralMap, tag = 'chart')
+```
+Source: World Development Indicators 
+
+```{r, results='asis', echo=FALSE, error=FALSE}
+VAMap <- gvisGeoChart(Data, locationvar = 'Country',
+                        colorvar = 'VoiceandAccountability',
+                        options = list(
+                          colors = "['#fff7bc', '#d95f0e']"
+                        ))
+
+print(VAMap, tag = 'chart')
+```
+Source: Worldwide Governance Indicators 
+
+```{r, results='asis', echo=FALSE, error=FALSE}
+GEMap <- gvisGeoChart(Data, locationvar = 'Country',
+                        colorvar = 'GovernmentEffectiveness',
+                        options = list(
+                          colors = "['#fff7bc', '#d95f0e']"
+                        ))
+
+print(GEMap, tag = 'chart')
+```
+Source: Worldwide Governance Indicators 
+
+```{r, results='asis', echo=FALSE, error=FALSE}
+PSMap <- gvisGeoChart(Data, locationvar = 'Country',
+                        colorvar = 'PoliticalStabilityNoViolence',
+                        options = list(
+                          colors = "['#fff7bc', '#d95f0e']"
+                        ))
+
+print(PSMap, tag = 'chart')
+```
+Source: Worldwide Governance Indicators 
+
+```{r, results='asis', echo=FALSE, error=FALSE}
+FreeMap <- gvisGeoChart(Data, locationvar = 'Country',
+                        colorvar = 'Free',
+                        options = list(
+                          colors = "['#fff7bc', '#d95f0e']"
+                        ))
+
+print(FreeMap, tag = 'chart')
+```
+Source: Freedom House
+
+```{r, results='asis', echo=FALSE, error=FALSE}
+GQMap <- gvisGeoChart(Data, locationvar = 'Country',
+                        colorvar = 'GenderEquality',
+                        options = list(
+                          colors = "['#fff7bc', '#d95f0e']"
+                        ))
+
+print(GQMap, tag = 'chart')
+```
+Source: World Development Indicators
+ 
+ 
 For a better understanding of the dynamics of our datasets, feel free to play with the following interactive tool: 
 
 ```{r, results='asis', echo=FALSE, error=FALSE}
