@@ -1,0 +1,65 @@
+---
+output: 
+  html_document: 
+    theme: flatly
+authors: Nicolas Rosemberg
+---
+
+```{r, include=FALSE}
+
+### 1. Setting Working Directory & Loading the data
+# Setting the Working Directory
+
+setwd("/Users/Nico/Documents/Hertie/Thesis/Data analysis/Master-Thesis")
+
+# Loading the Citations
+pkgs <- c('ggplot2', 'googleVis', 'plyr')
+repmis::LoadandCite(pkgs)
+
+# Loading the merged files from the Working directory
+Data <- read.csv(file="website.csv")
+
+
+```
+
+# MASTER THESIS - DESCRIPTIVE STATISTICS AND FINDINGS
+
+
+
+# WHY ARE WE INTERESTED IN THIS TOPIC?  
+
+# DESCRIPTIVE STATISTICS
+
+
+** Worldwide distribution of out-of-pocket payments **
+
+```{r, results='asis', echo=FALSE, error=FALSE}
+OOPMap <- gvisGeoChart(Data, locationvar = 'Country',
+                        colorvar = 'OOP',
+                        options = list(
+                          colors = "['#fff7bc', '#d95f0e']"
+                        ))
+
+print(OOPMap, tag = 'chart')
+```
+Source: World Development Indicators
+ 
+For a better understanding of the dynamics of our datasets, feel free to play with the following interactive tool: 
+
+```{r, results='asis', echo=FALSE, error=FALSE}
+
+M <- gvisMotionChart(Data, "Country", "year",
+                     options=list(width=900, height=650))
+
+
+print(M, tag = 'chart')
+
+```
+
+
+
+
+# FINDINGGS
+
+
+
