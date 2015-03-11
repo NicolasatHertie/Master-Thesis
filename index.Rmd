@@ -44,6 +44,7 @@ print(OOPMap, tag = 'chart')
 ```
 Source: World Development Indicators
  
+** Share of rural population **
 ```{r, results='asis', echo=FALSE, error=FALSE}
 RuralMap <- gvisGeoChart(Data, locationvar = 'Country',
                         colorvar = 'Rural',
@@ -55,6 +56,7 @@ print(RuralMap, tag = 'chart')
 ```
 Source: World Development Indicators 
 
+** Voice and Accountability **
 ```{r, results='asis', echo=FALSE, error=FALSE}
 VAMap <- gvisGeoChart(Data, locationvar = 'Country',
                         colorvar = 'VoiceandAccountability',
@@ -66,6 +68,7 @@ print(VAMap, tag = 'chart')
 ```
 Source: Worldwide Governance Indicators 
 
+** Government Effectiveness **
 ```{r, results='asis', echo=FALSE, error=FALSE}
 GEMap <- gvisGeoChart(Data, locationvar = 'Country',
                         colorvar = 'GovernmentEffectiveness',
@@ -77,6 +80,7 @@ print(GEMap, tag = 'chart')
 ```
 Source: Worldwide Governance Indicators 
 
+** Political Stability and No Violence **
 ```{r, results='asis', echo=FALSE, error=FALSE}
 PSMap <- gvisGeoChart(Data, locationvar = 'Country',
                         colorvar = 'PoliticalStabilityNoViolence',
@@ -88,6 +92,7 @@ print(PSMap, tag = 'chart')
 ```
 Source: Worldwide Governance Indicators 
 
+** Freedom **
 ```{r, results='asis', echo=FALSE, error=FALSE}
 FreeMap <- gvisGeoChart(Data, locationvar = 'Country',
                         colorvar = 'Free',
@@ -99,6 +104,7 @@ print(FreeMap, tag = 'chart')
 ```
 Source: Freedom House
 
+** Gender Equality **
 ```{r, results='asis', echo=FALSE, error=FALSE}
 GQMap <- gvisGeoChart(Data, locationvar = 'Country',
                         colorvar = 'GenderEquality',
