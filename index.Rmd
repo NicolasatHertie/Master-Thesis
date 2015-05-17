@@ -17,16 +17,12 @@ pkgs <- c('ggplot2', 'googleVis', 'plyr')
 repmis::LoadandCite(pkgs)
 
 # Loading the merged files from the Working directory
-Data <- read.csv(file="website.csv")
+Data <- read.csv(file="website2.csv")
 
 
 ```
 
-# MASTER THESIS - DESCRIPTIVE STATISTICS AND FINDINGS
-
-
-
-# WHY ARE WE INTERESTED IN THIS TOPIC?  
+# MASTER THESIS - DYNAMIC DESCRIPTIVE STATISTICS 
 
 # DESCRIPTIVE STATISTICS
 
@@ -92,18 +88,6 @@ print(PSMap, tag = 'chart')
 ```
 Source: Worldwide Governance Indicators 
 
-** Freedom **
-```{r, results='asis', echo=FALSE, error=FALSE}
-FreeMap <- gvisGeoChart(Data, locationvar = 'iso2c',
-                        colorvar = 'Free',
-                        options = list(
-                          colors = "['#fff7bc', '#d95f0e']"
-                        ))
-
-print(FreeMap, tag = 'chart')
-```
-Source: Freedom House
-
 ** Gender Equality **
 ```{r, results='asis', echo=FALSE, error=FALSE}
 GQMap <- gvisGeoChart(Data, locationvar = 'iso2c',
@@ -128,11 +112,3 @@ M <- gvisMotionChart(Data, "Country", "year",
 print(M, tag = 'chart')
 
 ```
-
-
-
-
-# FINDINGGS
-
-
-
